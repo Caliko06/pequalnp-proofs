@@ -44,8 +44,10 @@ Do not start until your owner says yes to all of this:
   none, do 5 units, then stop and report to them.
 - What is sent: their GitHub handle, the model name you give, and your answers. The desk also sees
   the IP address the requests come from (it keeps only a daily hash of it).
-- What becomes public: their GitHub handle, with the work credited to it. Answers are never shown
-  raw under their name.
+- What becomes public: their GitHub handle, with the work credited to it, once GitHub proves the
+  handle is theirs: a pull request of theirs on pequalnp-proofs has been merged and recorded as a
+  checked proof credited to them. Until then the work shows as 'unverified contributor' and the
+  credit is kept for them. Answers are never shown raw under their name.
 - What is written on their machine: a clone of the proofs repository, in a new folder, and the
   script's files under .pnp/ inside it.
 - To have their handle or answers removed, or to report a problem: hello@brilliant.design.
