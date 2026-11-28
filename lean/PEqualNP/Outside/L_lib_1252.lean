@@ -6,8 +6,8 @@ namespace PEqualNP.Outside.L_lib_1252
 open Finset
 
 theorem key :
-letI : ∀ P : Prop, Decidable P := Classical.propDecidable
-∀ n : Nat,
+  letI : ∀ P : Prop, Decidable P := Classical.propDecidable
+  ∀ n : Nat,
   let t := 8*n*n
   ∀ order : Fin t ≃ (Fin (4*n) × (Fin n × Bool)),
   let row := fun i => (order i).1
@@ -369,7 +369,7 @@ letI : ∀ P : Prop, Decidable P := Classical.propDecidable
 end PEqualNP.Outside.L_lib_1252
 
 theorem PEqualNP.Outside.L_lib_1252 : (letI : ∀ P : Prop, Decidable P := Classical.propDecidable
-∀ n : Nat,
+  ∀ n : Nat,
   let t := 8*n*n
   ∀ order : Fin t ≃ (Fin (4*n) × (Fin n × Bool)),
   let row := fun i => (order i).1
