@@ -65,8 +65,8 @@ theorem sortk {α : Type} [DecidableEq α] (tau : α → ℕ) (S : Finset α) :
       exact mem_of_mem_erase this
 
 theorem key :
-letI : ∀ P : Prop, Decidable P := Classical.propDecidable
-∀ w : Nat,
+  letI : ∀ P : Prop, Decidable P := Classical.propDecidable
+  ∀ w : Nat,
   let m := w+2*(w*w)
   let cut := w+w*w
   ∃ b : Fin m → Finset (Fin m),
@@ -405,7 +405,7 @@ letI : ∀ P : Prop, Decidable P := Classical.propDecidable
 end PEqualNP.Outside.L_lib_1250
 
 theorem PEqualNP.Outside.L_lib_1250 : (letI : ∀ P : Prop, Decidable P := Classical.propDecidable
-∀ w : Nat,
+  ∀ w : Nat,
   let m := w+2*(w*w)
   let cut := w+w*w
   ∃ b : Fin m → Finset (Fin m),
