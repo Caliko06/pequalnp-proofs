@@ -8,7 +8,7 @@ import PEqualNP.Defs
 
 namespace PEqualNP.Outside.L_lib_1137
 
-open scoped symmDiff
+open symmDiff
 
 private def chi {α : Type*} [DecidableEq α] (A B : Finset α) : ℤ :=
   ∏ a ∈ A, if a ∈ B then (-1 : ℤ) else 1
