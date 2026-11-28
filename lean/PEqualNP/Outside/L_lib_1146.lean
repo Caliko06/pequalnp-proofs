@@ -11,7 +11,8 @@ import PEqualNP.Defs
 
 namespace PEqualNP.Outside.L_lib_1146
 
-open scoped symmDiff Classical
+open symmDiff
+open scoped Classical
 
 private def chi {α : Type*} [DecidableEq α] (A B : Finset α) : ℤ :=
   ∏ a ∈ A, if a ∈ B then (-1 : ℤ) else 1
